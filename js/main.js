@@ -5,13 +5,7 @@
     $(document).ready(function() {
         $(".banner-content h1, .banner-content p, .banner-content a").addClass("animate");
     });
-    
-    // Aos
-  
-    $(window).on("load", function () {
-        AOS.init();
-    });
-    
+
     $(".client-reviews").owlCarousel({
         loop:true,
         autoplay:true,
@@ -33,20 +27,6 @@
                 itesm: 3.25
             }
         }
-    })
-
-    $('.owl-dots button').attr('aria-label', 'owl-btn');
-
-    var navSidebarToggle = document.querySelector(".toggle-1");
-    var sidebarToggle = document.querySelector(".mah-sidebar .nav-toggle");
-    var sidebar = document.querySelector(".mah-sidebar");
-
-    navSidebarToggle.addEventListener("click",()=>{
-        sidebar.classList.add("active")
-    })
-
-    sidebarToggle.addEventListener("click",()=>{
-        sidebar.classList.remove("active")
     })
 
 })(jQuery)
