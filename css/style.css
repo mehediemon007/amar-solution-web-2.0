@@ -1,24 +1,25 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@300;400;500;600;700&display=swap');
 
 :root {
 
     /* Colors */
-    --primary-color: #009738;
-    --secondary-color: #2E2E2E;
-    --title-color: #3e3e3e;
-    --text-color: #808080;
-    --body-bg-color: #FAFFFC;
+    --primary-color: #3734A9;
+    --secondary-color: #0C0047;
+    --title-color: #0C0047;
+    --text-color: #64607D;
+    --body-bg-color:  #F1F5FF;
     --white-color: #ffffff;
 
     /* Typography */
-    --body-font: 'Inter', sans-serif;
-    --title-font: 'Inter', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
+    --title-font: 'Manrope', sans-serif;
     --font-weight-small: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semi-bold: 600;
     --font-weight-bold: 700;
+    --font-weight-bolder: 800;
 
     /* Others */
     --transition: .3s;
@@ -38,7 +39,7 @@ html {
 body {
     position: relative;
     font-family: var(--body-font);
-    background-color: var(--body-bg-color);
+    background-color: var(--white-color);
     overflow: hidden;
     transition: all .3s, background-color 0s;
 }
@@ -62,20 +63,21 @@ h4,
 h5,
 h6 {
     font-family: var(--title-font);
-    font-weight: var(--font-weight-semi-bold);
+    font-weight: var(--font-weight-bold);
     color: var(--title-color);
     margin-bottom: 0;
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: var(--font-weight-bold);
-    line-height: 83px;
+    font-size: 3.75rem;
+    font-weight: var(--font-weight-bolder);
+    line-height: 1.33;
 }
 
 h2 {
-    font-size: 3.125rem;
-    line-height: 88px;
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bolder);
+    line-height: 55px;
 }
 
 h3 {
@@ -253,6 +255,19 @@ input::placeholder {
 
 .sec-spacer-top{
     padding-top: 100px;
+}
+
+.ams-btn{
+    display: inline-block;
+    width: max-content;
+    height: 45px;
+    font-size: 1rem;
+    color: var(--primary-color);
+    line-height: 45px;
+    border: 1px solid var(--primary-color);
+    border-radius: 7px;
+    padding: 0 30px;
+    text-align: center;
 }
 
 .color-text{
