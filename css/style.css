@@ -386,6 +386,12 @@ input::placeholder {
     transform: translateY(-10%);
 }
 
+/* Partners */
+
+.partner-slider .item{
+    vertical-align: baseline;
+}
+
 /* Service */
 
 .sec-heading p{
@@ -527,6 +533,22 @@ input::placeholder {
     margin-top: 0;
 }
 
+/* Newsletter */
+
+.ams-news-letter{
+    background-color: var(--primary-color);
+}
+
+.ams-news-letter .ams-btn{
+    height: auto;
+    font-size: 1.10rem;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    margin-top: 24px;
+    padding: 22px 40px;
+    line-height: 1;
+}
+
 /* Testimonial */
 
 .client-reviews .owl-stage-outer{
@@ -658,10 +680,9 @@ box-shadow: inset 0 0 0 3px #fff;
 
 /* Contact */
 
-.amscontact{
-    /* background-color: #DCF9E6;
-    padding: 130px 0; */
-    margin-bottom: -100px;
+.ams-contact{
+    padding-top: 130px;
+    margin-bottom: -150px;
 }
 
 .contact-content h2{
@@ -669,10 +690,12 @@ box-shadow: inset 0 0 0 3px #fff;
 }
 
 .contact-form{
+    position: relative;
     background: #FFFFFF;
     box-shadow: 0px 80px 105.701px rgba(153, 171, 219, 0.7);
     border-radius: 20px;
     padding: 50px 32px;
+    z-index: 10;
 }
 
 .contact-form .input-grp input,
@@ -718,9 +741,23 @@ box-shadow: inset 0 0 0 3px #fff;
 /* Footer */
 
 .ams-footer{
+    position: relative;
+    background: url("../images/shapes/footer-stripe.png") no-repeat left top;
+    background-size: contain;
+    padding-top: 200px;
+    z-index: 1;
+}
+
+.ams-footer::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
     background: url("../images/shapes/footer-curve.png") no-repeat left top;
     background-size: cover;
-    padding-top: 200px;
+    z-index: -1;
 }
 
 .ams-footer p{
