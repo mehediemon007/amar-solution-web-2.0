@@ -480,9 +480,9 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--white-color); */
-    background-color: red;
+    background-color: var(--white-color);
     border-radius: 20px;
+    margin-bottom: 16px;
 }
 
 .single-process .icon span{
