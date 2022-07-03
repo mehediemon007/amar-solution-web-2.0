@@ -257,6 +257,10 @@ input::placeholder {
     padding-top: 100px;
 }
 
+.sec-spacer-bottom{
+    padding-bottom: 100px;
+}
+
 .ams-btn{
     display: inline-block;
     width: max-content;
@@ -461,6 +465,50 @@ input::placeholder {
     font-size: .93rem;
     font-weight: var(--title-font);
     line-height: 24px;
+}
+
+/* Service Process */
+
+.ams-service-process .sec-heading p{
+    max-width: 70%;
+    margin: 20px auto 16px 0;
+}
+
+.single-process .icon{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--white-color); */
+    background-color: red;
+    border-radius: 20px;
+}
+
+.single-process .icon span{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.single-process{
+    position: relative;
+    max-width: 60%;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.single-process .process-nmbr{
+    position: absolute;
+    top: -20%;
+    right: 0;
+    width: max-content;
+    font-size: 150px;
+    font-weight: var(--font-weight-bolder);
+    color: rgba(0, 0, 0, 0.05);
+    z-index: -1;
 }
 
 /* Features */
