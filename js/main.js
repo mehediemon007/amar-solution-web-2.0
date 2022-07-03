@@ -6,11 +6,11 @@
         $(".banner-content h1, .banner-content p, .banner-content a").addClass("animate");
     });
 
-    $(".client-reviews").owlCarousel({
+    var owl = $(".client-reviews").owlCarousel({
         loop:true,
         autoplay:true,
         items:3.25,
-        margin:30,
+        margin:20,
         nav:false,
         smartSpeed:500,
         responsive:{
@@ -28,6 +28,23 @@
             }
         }
     })
+
+    var activeElement = $('.client-reviews .owl-item.active');
+    $(activeElement[0]).addClass("middle")
+    // activeElement.eq(0).addClass('selezionato');
+
+    owl.on('changed.owl.carousel', function(event) {
+
+        $(".owl-carousel .owl-item").each(function( index, value ) {
+            if($(value).hasClass("middle")){
+                $(value).removeClass("middle")
+            }
+        });
+
+        activeElement = $('.owl-carousel .owl-item.active');
+        $(activeElement[1]).addClass("middle")
+
+    });
 
 })(jQuery)
   
