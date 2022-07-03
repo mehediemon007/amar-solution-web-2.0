@@ -575,13 +575,13 @@ background: var(--primary-color);
 box-shadow: inset 0 0 0 3px #fff;
 }
 
-.amstestimonial{
+.ams-testimonial{
     position: relative;
     padding: 140px 0 60px;
     z-index: 1;
 }
 
-.amstestimonial::before{
+.ams-testimonial::before{
     position: absolute;
     content: "";
     top: 0;

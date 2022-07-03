@@ -46,6 +46,14 @@
 
     });
 
+    $(".partner-slider").owlCarousel({
+        items: 7,
+        loop: true,
+        autoplay: true, 
+        dots: false,
+        margin: 50
+    })
+
 })(jQuery)
   
   
