@@ -469,9 +469,28 @@ input::placeholder {
 
 /* Service Process */
 
+.ams-service-process .sec-heading {
+    margin-bottom: 120px;
+}
+
 .ams-service-process .sec-heading p{
     max-width: 70%;
     margin: 20px auto 16px 0;
+}
+
+.service-process-wpr{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    z-index: 1;
+}
+
+.service-process-wpr img{
+    position: absolute;
+    bottom: 70%;
+    left: 0;
+    width: 90%;
+    z-index: -1;
 }
 
 .single-process .icon{
@@ -482,7 +501,7 @@ input::placeholder {
     align-items: center;
     background-color: var(--white-color);
     border-radius: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .single-process .icon span{
@@ -498,6 +517,18 @@ input::placeholder {
     max-width: 60%;
     margin-left: auto;
     z-index: 1;
+}
+
+.single-process:nth-child(2){
+    bottom: 6%;
+}
+
+.single-process:nth-child(3){
+    bottom: 65%;
+}
+
+.single-process:last-child{
+    bottom: 175%;
 }
 
 .single-process .process-nmbr{
