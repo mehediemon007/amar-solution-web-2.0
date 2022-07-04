@@ -222,6 +222,12 @@
         font-size: 1.88rem;
     }
 
+    .nav-action .ams-btn{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 16px;
+    }
+
     .banner-content h1 {
         font-size: 2.285rem;
     }
@@ -253,6 +259,10 @@
 /* Max Width 320px */
 
 @media only screen and (max-width:320px){
+
+    .nav-action .ams-btn{
+        padding: 0 12px;
+    }
 
     .banner-content h1 {
         font-size: 1.8rem;
