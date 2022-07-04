@@ -253,6 +253,10 @@
         grid-template-columns: 1fr;
     }
 
+    .ams-service-process .sec-heading{
+        margin-bottom: 40px;
+    }
+
     .service-process-wpr img{
         display: none;
     }
