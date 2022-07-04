@@ -296,6 +296,13 @@ input::placeholder {
     text-overflow: ellipsis;
 }
 
+.bg-shapes img{
+    position: absolute;
+    top: -30px;
+    right: 0;
+    z-index: -1;
+}
+
 /* Header */
 
 .header-wpr{
@@ -460,6 +467,12 @@ input::placeholder {
     font-size: .93rem;
     font-weight: var(--title-font);
     line-height: 24px;
+}
+
+.ams-service .bg-shapes img{
+    top: 0;
+    right: auto;
+    left: 0;
 }
 
 /* Service Process */
