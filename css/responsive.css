@@ -99,6 +99,10 @@
         padding: 80px 0;
     }
 
+    .ams-contact{
+        padding-top: 80px;
+    }
+
 }
 
 /* Max Width 767px */
@@ -135,11 +139,23 @@
 
 @media only screen and (max-width:480px){
 
+    h2{
+        font-size: 2.25rem;
+    }
+
+    .footer-top{
+        padding-top: 100px;
+    }
+
 }
 
 /* Max Width 416px */
 
 @media only screen and (max-width:416px){
+
+    h2{
+        font-size: 1.88rem;
+    }
 
     .banner-content h1 {
         font-size: 2.285rem;
@@ -147,6 +163,10 @@
 
     .contact-form{
         padding: 32px 16px;
+    }
+
+    .service-content h2, .contact-content h2{
+        line-height: 45px;
     }
 
 }
