@@ -53,6 +53,8 @@
         }
     })
 
+    $('.owl-dots button').attr('aria-label', 'owl-btn');
+
     var activeElement = $('.client-reviews .owl-item.active');
     $(activeElement[0]).addClass("middle")
     // activeElement.eq(0).addClass('selezionato');
