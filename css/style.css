@@ -531,14 +531,6 @@ input::placeholder {
     bottom: 6%;
 }
 
-.single-process:nth-child(3){
-    bottom: 65%;
-}
-
-.single-process:last-child{
-    bottom: 175%;
-}
-
 .single-process .process-nmbr{
     position: absolute;
     top: -5%;

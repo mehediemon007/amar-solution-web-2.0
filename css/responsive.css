@@ -13,6 +13,14 @@
         right: 0;
     }
 
+    .single-process:nth-child(3){
+        bottom: 65% !important;
+    }
+
+    .single-process:last-child{
+        bottom: 175% !important;
+    }
+
 }
 
 /* Min Width 1200px */
@@ -21,6 +29,14 @@
     .container-right{
         padding-left: calc((100% - 1140px) / 2 + 15px);
         padding-right: 0;
+    }
+
+    .single-process:nth-child(3){
+        bottom: 48%;
+    }
+
+    .single-process:last-child{
+        bottom: 128%;
     }
 
 }
@@ -95,6 +111,29 @@
         grid-template-columns: repeat(2,1fr);
         grid-gap: 24px;
     }
+
+    .service-process-wpr img{
+        bottom: 85%;
+    }
+
+    .single-process{
+        max-width: 70%;
+        left: 15%;
+    }
+
+    .single-process:nth-child(2){
+        bottom: 10%;
+    }
+
+    .single-process:nth-child(3){
+        bottom: 48%;
+    }
+
+    .single-process:last-child{
+        bottom: 120%;
+        left: 8%;
+    }
+
 }
 
 /* Max Width 991px */
@@ -168,6 +207,33 @@
 
     /* Mobile Menu End */
 
+    .ams-service-process .sec-heading p{
+        max-width: 100%;
+    }
+
+    .service-process-wpr img{
+        bottom: 70%;
+    }
+
+    .single-process{
+        max-width: 85%;
+        left: 0;
+    }
+
+    .single-process:nth-child(2){
+        bottom: 4%;
+    }
+
+    .single-process:nth-child(3){
+        left: 15%;
+        bottom: 25%;
+    }
+
+    .single-process:last-child{
+        left: 15%;
+        bottom: 68%;
+    }
+
 }
 
 /* Max Width 767px */
@@ -185,6 +251,25 @@
 
     .features-wpr{
         grid-template-columns: 1fr;
+    }
+
+    .service-process-wpr img{
+        display: none;
+    }
+
+    .service-process-wpr{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 24px;
+    }
+
+    .single-process{
+        max-width: 100%;
+        left: 0 !important;
+        bottom: 0 !important;
+    }
+
+    .single-process .icon{
+        border: 1px solid var(--primary-color);
     }
 
 }
@@ -206,6 +291,10 @@
 
     h2{
         font-size: 2.25rem;
+    }
+
+    .service-process-wpr{
+        grid-template-columns: 1fr;
     }
 
     .footer-top{
