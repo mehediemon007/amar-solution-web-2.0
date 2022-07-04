@@ -5,6 +5,14 @@
         padding-left: calc((100% - 1320px) / 2 + 15px) !important;
         padding-right: 0;
     }
+
+    .ams-banner .banner-image{
+        position: absolute;
+        width: 50%;
+        top: 0;
+        right: 0;
+    }
+
 }
 
 /* Min Width 1200px */
@@ -15,16 +23,14 @@
         padding-right: 0;
     }
 
-    .ams-banner .banner-image{
-        position: absolute;
-        width: 50%;
-        top: 0;
-        right: 0;
-    }
 }
 
 /* Min Width 992px */
 @media only screen and (min-width:992px){
+
+    .ams-nav-menu{
+        display: flex !important;
+    }
 
     .ams-nav-menu .sub-menu{
         position: absolute;
@@ -72,6 +78,11 @@
         padding-right: 0;
     }
 
+    .ams-nav-menu{
+        justify-content: flex-end;
+        gap: 32px;
+    }
+
     .banner-content h1{
         font-size: 3rem;
     }
@@ -102,6 +113,60 @@
     .ams-contact{
         padding-top: 80px;
     }
+
+    /* Mobile Menu Start */
+
+    .nav-toggle {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        color: var(--primary-color);
+        background-color: #fff;
+        border: 1px solid var(--primary-color);
+        border-radius: 5px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+    }
+
+    .ams-nav-menu{
+        position: absolute;
+        top: 65px;
+        left: 0;
+        display: none;
+        width: 100%;
+        background-color: var(--white-color);
+        box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+        padding: 0 24px;
+        z-index: 10;
+    }
+
+    .ams-nav-menu li a{
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 24px;
+    }
+
+    .ams-nav-menu > li a{
+        border-bottom: 1px solid #3734a91a;
+    }
+
+    .ams-nav-menu > li:last-child a{
+        border-bottom: none;
+    }
+
+    .ams-nav-menu .sub-menu{
+        display: none;
+    }
+
+    .ams-nav-menu .sub-menu li a{
+        border-bottom:  1px dashed #ededed;
+        margin-left: 30px;
+        padding: 12px 20px;
+    }
+
+    /* Mobile Menu End */
 
 }
 
