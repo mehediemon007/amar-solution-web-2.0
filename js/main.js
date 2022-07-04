@@ -1,5 +1,11 @@
 ;(function(){
 
+    // WOW Animation
+    
+    $(document).ready(function () {
+        new WOW().init();
+    });
+
     // Banner Translate
 
     $(document).ready(function() {
