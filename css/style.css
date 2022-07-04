@@ -366,10 +366,6 @@ input::placeholder {
 }
 
 .ams-banner .banner-image{
-    position: absolute;
-    width: 50%;
-    top: 0;
-    right: 0;
     animation: float-bob-y 3s linear infinite;
     z-index: -1;
 }
@@ -399,7 +395,6 @@ input::placeholder {
 /* Service */
 
 .sec-heading p{
-    max-width: 50%;
     margin: 20px auto 0;
 }
 

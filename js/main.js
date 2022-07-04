@@ -11,7 +11,20 @@
         loop: true,
         autoplay: true,
         dots: false,
-        margin: 50
+        margin: 50,
+        responsive:{
+            0:{
+                items:3,
+                margin:30
+            },
+            768:{
+                items: 5
+            },
+            1200:{
+                items:7,
+                margin:50
+            }
+        }
     })
 
     var owl = $(".client-reviews").owlCarousel({
@@ -21,8 +34,10 @@
         margin:20,
         nav:false,
         smartSpeed:500,
+        mouseDrag: false,
         responsive:{
             0:{
+                dotsEach:3,
                 items: 1.25
             },
             575:{
@@ -32,6 +47,7 @@
                 items: 3
             },
             1099:{
+                dotsEach: 2,
                 itesm: 3.25
             }
         }
