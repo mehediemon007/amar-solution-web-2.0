@@ -915,14 +915,20 @@ box-shadow: inset 0 0 0 3px #fff;
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 60px 40px;
-    margin-top: 24px;
+    margin: 32px 50px 0 0;
     z-index: 10;
+}
+
+.contact-links > p{
+    max-width: 65%;
+    font-size: .95rem;
+    line-height: 1.7;
 }
 
 .contact-links ul li{
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .contact-links li a{
