@@ -452,6 +452,22 @@ input::placeholder {
     animation: float-bob-x 3s linear infinite;
 }
 
+.service-2 .single-service{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: flex-start;
+    grid-gap: 24px;
+    text-align: left;
+}
+
+.service-2 .single-service h6{
+    margin-top: 0;
+}
+
+.service-2 .single-service p{
+    max-width: 65%;
+}
+
 /* Service Process */
 
 .ams-service-process .sec-heading {
@@ -570,8 +586,6 @@ input::placeholder {
 }
 
 .single-feature p{
-    font-size: .875rem;
-    line-height: 23.8px;
     margin: 20px 0;
 }
 
@@ -595,6 +609,104 @@ input::placeholder {
 
 .features-wpr-2 .single-feature p{
     margin-top: 0;
+}
+
+/* Faq */
+
+.ams-faq,
+.features-2{
+    position: relative;
+    z-index: 1;
+}
+
+.ams-faq::before,
+.features-2::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/shapes/faq-curve.png") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.faq-shape1{
+    top: 100px;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.faq-wpr{
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.faq-list li{
+    display: block;
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    border-radius: 18px;
+    padding: 40px 32px;
+    margin-bottom: 24px;
+}
+
+.faq-list li input[type="radio"]{
+    display: none;
+}
+
+.faq-list li label{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: var(--font-weight-medium) 22px/1.5 var(--body-font);
+    cursor: pointer;
+    user-select: none;
+    transition: 0.45s;
+}
+
+.faq-list li input[type="radio"] ~ label i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    text-align: center;
+    line-height: 50px;
+}
+
+.faq-list li input[type="radio"]:checked ~ label i{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    transform: rotate(-180deg);
+}
+
+.faq-list li input[type="radio"]:hover~ label,
+.faq-list li input[type="radio"]:checked ~ label{
+    color: var(--primary-color);
+}
+
+.faq-content-wpr{
+    width: 100%;
+    overflow-y: hidden;
+    height: 0;
+    transition: 1s;
+}
+
+.faq-content-wpr .content{
+    padding-top: 20px;
+}
+
+.faq-list li input[type="radio"]:checked ~ .faq-content-wpr{
+    max-width: 715px;
+    height: max-content;
 }
 
 /* Newsletter */
@@ -795,6 +907,27 @@ box-shadow: inset 0 0 0 3px #fff;
 .contact-form .input-grp textarea{
     height: 165px;
     padding: 16px 24px;
+}
+
+.contact-links{
+    position: relative;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 60px 40px;
+    margin-top: 24px;
+    z-index: 10;
+}
+
+.contact-links ul li{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-links li a{
+    display: block;
+    color: #000;
 }
 
 /* Footer */
