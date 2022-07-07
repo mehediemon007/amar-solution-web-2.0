@@ -753,6 +753,23 @@ input::placeholder {
     border-bottom: 1px solid #DEE1E6;
 }
 
+.ams-pagination a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    font-size: .95rem;
+    line-height: 32px;
+    color: #212B36;
+    border: 1px solid #DFE3E8;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.ams-pagination a:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
 /* Newsletter */
 
 .ams-news-letter{
