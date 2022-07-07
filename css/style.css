@@ -611,6 +611,35 @@ input::placeholder {
     margin-top: 0;
 }
 
+.feature-list li{
+    font: var(--font-weight-medium) 16px/30px var(--body-font);
+    margin-left: 16px;
+    list-style: disc;
+}
+
+.feature-list-2 li{
+    position: relative;
+    font: var(--font-weight-medium) 16px/30px var(--body-font);
+    list-style: none;
+    padding-left: 32px;
+    margin-bottom: 16px;
+}
+
+.feature-list-2 li::before{
+    position: absolute;
+    content: "\f00c";
+    left: 0;
+    font: 600 14px 'Font Awesome 6 Free';
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: var(--white-color);
+    background-color: #6DD130;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
 /* Faq */
 
 .ams-faq,
