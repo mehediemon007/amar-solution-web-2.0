@@ -709,6 +709,50 @@ input::placeholder {
     height: max-content;
 }
 
+/* Blogs */
+
+.blog-cat-links{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 10px;
+}
+
+.blog-cat-links a{
+    display: inline-block;
+    font-size: 1rem;
+    color: #3D3D3D;
+}
+
+.blog-cat-links a.active{
+    color: var(--primary-color);
+    font-weight: var(--font-weight-medium);
+}
+
+.single-blog .blog-image img{
+    border-radius: 10px;
+}
+
+.single-blog .blog-content .meta-data{
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.single-blog .blog-content .blog-title{
+    display: inline-block;
+    margin: 16px 0;
+}
+
+.single-blog .blog-content .ams-btn{
+    margin-top: 16px;
+}
+
+.sidebar-blogs .single-blog{
+    padding: 12px 0;
+    border-bottom: 1px solid #DEE1E6;
+}
+
 /* Newsletter */
 
 .ams-news-letter{
