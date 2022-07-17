@@ -234,6 +234,12 @@
         bottom: 68%;
     }
 
+    .sidebar-blogs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 40px;
+    }
+
 }
 
 /* Max Width 767px */
@@ -274,6 +280,11 @@
 
     .single-process .icon{
         border: 1px solid var(--primary-color);
+    }
+
+    .sidebar-blogs{
+        grid-template-columns: 1fr;
+        grid-row-gap: 16px;
     }
 
 }
@@ -331,6 +342,12 @@
 
     .service-content h2, .contact-content h2{
         line-height: 45px;
+    }
+
+    .social-share-wpr{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
     }
 
 }
