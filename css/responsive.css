@@ -240,6 +240,10 @@
         margin-top: 40px;
     }
 
+    .contact-links{
+        margin-right: 0;
+    }
+
 }
 
 /* Max Width 767px */
