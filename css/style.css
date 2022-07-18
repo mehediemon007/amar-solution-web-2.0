@@ -274,6 +274,11 @@ input::placeholder {
     text-align: center;
 }
 
+.ams-fashion .ams-btn{
+    color: var(--white-color);
+    border-color: var(--white-color);
+}
+
 .primary-btn{
     color: var(--white-color);
     background-color: var(--primary-color);
