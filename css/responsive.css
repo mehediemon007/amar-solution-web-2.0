@@ -134,6 +134,14 @@
         left: 8%;
     }
 
+    .single-service{
+        padding: 40px 24px;
+    }
+
+    .service-2 .single-service p{
+        max-width: 100%;
+    }
+
 }
 
 /* Max Width 991px */
@@ -244,6 +252,10 @@
         margin-right: 0;
     }
 
+    .faq-wpr{
+        max-width: 100%;
+    }
+
 }
 
 /* Max Width 767px */
@@ -289,6 +301,30 @@
     .sidebar-blogs{
         grid-template-columns: 1fr;
         grid-row-gap: 16px;
+    }
+
+    .faq-list li{
+        padding: 20px 16px;
+    }
+
+    .faq-list li label{
+        display: grid;
+        grid-template-columns: 1fr 40px;
+    }
+
+    .faq-list li input[type="radio"] ~ label i{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .contact-links{
+        padding: 32px 24px;
+    }
+
+    .service-2 .single-service{
+        grid-template-columns: 1fr;
     }
 
 }
