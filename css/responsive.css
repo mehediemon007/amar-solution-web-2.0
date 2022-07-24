@@ -256,6 +256,11 @@
         max-width: 100%;
     }
 
+    .ams-login{
+        background: none;
+        background-color: #E8F5F5;
+    }
+
 }
 
 /* Max Width 767px */
