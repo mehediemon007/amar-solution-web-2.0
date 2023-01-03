@@ -88,7 +88,7 @@
 
     $("li.menu-item-has-children").on("click",function(){
 
-        $(".sub-menu").slideToggle("200");
+        $(this).find(".sub-menu").slideToggle("200");
         
     })
 
