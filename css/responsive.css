@@ -21,6 +21,10 @@
         bottom: 175% !important;
     }
 
+    .footer-top{
+        padding-top: 200px;
+    }
+
 }
 
 /* Min Width 1200px */
